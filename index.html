@@ -1,68 +1,87 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>مصطفى الزبيدي - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/portfolio.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مصطفى الزبيدي - السيرة الذاتية</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
+
+  <!-- الهيدر -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <img src="images/me.jpg" alt="صورة مصطفى الزبيدي" class="profile-pic">
       <h1>مصطفى الزبيدي</h1>
-      <p>📱 مدرس حاسوب ومطور ويب </p>
+      <p>مطور ويب | مصمم واجهات حديثة</p>
+      <a href="#projects" class="btn">استعرض مشاريعي</a>
     </div>
   </header>
-
-  <section id="about" class="container">
-    <div class="about-text">
-      <h2>من أنا؟</h2>
+  <!-- قسم من أنا -->
+  <section id="about">
+    <h2>من أنا</h2>
+    <div class="about-container">
       <p>
-        مصطفى الزبيدي، مدرس حاسوب ومطور ويب . حاصل على شهادة البكالوريوس في علوم الحاسوب، واملك مهارات في :  HTML وCSS وJavaScript و React.
+        مطور ويب عراقي حاصل على شهادة البكالوريوس في علوم الحاسوب، 
+        وشهادة <strong>Full-Stack Developer</strong> معتمدة من شركة ق لاب.
       </p>
     </div>
-    <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Flutter development" />
+  </section>
+
+  <!-- قسم المشاريع -->
+  <section id="projects">
+    <h2>مشاريعي</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <img src="images/image.jpg" alt="مشروع 1">
+        <div class="card-body">
+          <h3>Computer-plus| مدونة حاسوب بلس</h3>
+          <a href="https://computerplus5.wordpress.com/" target="_blank" class="btn">زيارة الموقع</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/e-commers.png" alt="مشروع 2">
+        <div class="card-body">
+          <h3>متجر البيت العراقي</h3>
+          <a href="https://mustafa936.github.io/IraqiHomeStore/" target="_blank" class="btn">زيارة الموقع</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" alt="مشروع 3">
+        <div class="card-body">
+          <h3>soon| مشروع 3</h3>
+          <a href="https://example.com/project3" target="_blank" class="btn">زيارة الموقع</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="projects" class="container">
-    <h2>مشاريعي الخاصة</h2>
-    <ul>
-      <li class="project-item">
-         <div class="project-card">
-            <img src="images/image.jpg" alt="صورة المدونة" class="project-image">
-             <div class="project-info">
-                <h3> Computer-plus </h3>
-                 <p> "مدونة تقنية متخصصة في عالم الحاسوب والبرمجة" </p>
-                  <a href="https://computerplus5.wordpress.com" target="_blank" class="project-link"> زيارة المدونة </a>
-          </div>
-          </div>
-
- </li>
-      <li class="project-item">
-         <div class="project-card">
-            <img src="images/e-commers.png" alt="صورة المتجر" class="project-image">
-             <div class="project-info">
-                <h3> متجر البيت العراقي </h3>
-                 <p> "متجر الكتروني يلبي احتياجات الجميع" </p>
-                  <a href="https://mustafa936.github.io/IraqiHomeStore/" target="_blank" class="project-link"> زيارة المتجر </a>
-          </div>
-          </div>
-
- </li>
-    </ul>
+  <!-- قسم المهارات -->
+  <section id="skills">
+    <h2>المهارات والخبرات</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <h3>تطوير الويب</h3>
+        <p>HTML, CSS, JavaScript, React, NestJs</p>
+      </div>
+      <div class="skill">
+        <h3>تصميم واجهات المستخدم</h3>
+        <p>Figma, Adobe XD</p>
+      </div>
+      <div class="skill">
+        <h3>إدارة المشاريع</h3>
+        <p>Trello, Jira</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact" class="container">
-    <h2>تواصل معي</h2>
-    <p>📧 example@email.com</p>
-  </section>
-
+  <!-- الفوتر -->
   <footer>
-    <p>© 2025 مصطفى الزبيدي. جميع الحقوق محفوظة.</p>
+    <p>© 2026 مصطفى الزبيدي - جميع الحقوق محفوظة</p>
   </footer>
+
 </body>
 </html>
